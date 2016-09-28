@@ -1,0 +1,63 @@
+body{
+	background-color: #4f4f4f;
+}
+
+header{
+	position:relative;
+	background-color: #909090;
+	width:1000px;
+	margin:auto;
+	margin-bottom: 20px;
+	padding:auto;
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px #000000;
+}
+
+#reload{
+	position:absolute;
+	right:5px;
+	top: 5px;
+}
+
+#close{
+	position:absolute;
+	right:5px;
+	bottom:5px;
+}
+
+#loupe{
+	position:absolute;
+	right:30px;
+	bottom:-20px;	
+}
+
+#test{
+	position: relative;
+	margin: auto;
+	padding: auto;
+	width: 1000px;
+	background-color: red;
+	display: block;
+}
+
+#mouvement{
+	position: relative;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px #000000;
+	width:100px;
+}
+
+#lieux{
+	right: 100px;
+	float: right;
+}
+
+
+#objet{
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px #000000;
+	width:100px;
+	right: 0px;
+}
