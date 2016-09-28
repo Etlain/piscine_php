@@ -1,30 +1,41 @@
 <html>
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="doft.css">
 </head>
 <header>
 	<img src="resources/day_of_the_42.png" alt="title day of the 42" style="width:400px;height:138px;border-radius:10px;">
-	<img id="reload" src="resources/reload.png" alt="reload" style="width:20px;height:20px;">
-	<img id="close" src="resources/close.gif" alt="close" style="width:20px;height:20px;">
+	<a href="https://www.disney.com"><img id="reload" src="resources/reload.png" alt="reload" style="width:20px;height:20px;"></a>
+	<a href="https://www.relaischateaux.com"><img id="close" src="resources/close.gif" alt="close" style="width:20px;height:20px;"></a>
 	<img id="loupe" src="resources/loupe.png" alt="loupe" style="width:257px;height:147px;">
 </header>
 <body>
 <div id="test">
 	<aside id="mouvement">
-		<img src="resources/arrow.png" alt="arrow" style="width:50px;height:50px;">
-		<img src="resources/main.png" alt="main" style="width:50px;height:50px;">
-		<img src="resources/oeil.png" alt="oeil" style="width:50px;height:50px;">
-		<img src="resources/outil.png" alt="outil" style="width:50px;height:50px;">
-		<img src="resources/chat-icon.png" alt="chat" style="width:50px;height:50px;">
+		<img class="image_mouv" src="resources/arrow.png" alt="Avancer" title="Avancer">
+		<img class="image_mouv" src="resources/main.png" alt="Prendre" title="Prendre">
+		<img class="image_mouv" src="resources/oeil.png" alt="Regarder" title="Regarder" style="border: 5px solid red;">
+		<img class="image_mouv" src="resources/outil.png" alt="Utiliser" title="Utiliser">
+		<img class="image_mouv" src="resources/chat-icon.png" alt="Parler" title="Parler">
 	</aside>
-	<section id="lieu">
-		<img src="resources/cluster.jpg" alt="cluster" style="width:700px;height:300px;">
+	<section id="lieux">
+		<div style="float:rigth;"></div>
+		<img src="resources/cluster.jpg" alt="cluster" style="height:580px;width:1080px;margin:10px;">
 	</section>
 	<aside id="objet">
-		<img src="resources/chat-icon.png" alt="chat" style="width:50px;height:50px;">
-		<img src="resources/chat-icon.png" alt="chat" style="width:50px;height:50px;">
-		<img src="resources/chat-icon.png" alt="chat" style="width:50px;height:50px;">
+		<img class="image_obj" src="resources/book.png" alt="book"  title="Livre" style="height:90px;width:70px;">
+		<img class="image_obj" src="resources/towel.png" alt="towel" title="towel" style="height:60px;width:60px;">
+		<div id="brick" title="brique">
+		</div>	
 	</aside>
+	<div id="boite">
+	Vous <span style="font-size:40px;">entrez</span> alors dans une grande piece remplie d'ordinateurs...<br />
+	-Bonjour, vous êtes nouveau ici ?<br />
+	<form>
+		<input type="text" name="question" size="60"></input>
+		<input type="submit" value="Repondre"></input>
+	</form>
+	</div>
 </div>
 </body>
 </html>
