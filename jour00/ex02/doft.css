@@ -65,6 +65,21 @@ header{
 	height: 600px;
 }
 
+#chaise{
+	height:50px;
+	width:50px;
+	position:absolute;
+	left:382px;
+	bottom:140px;
+}
+
+#ordi{
+	height:100px;
+	width:180px;
+	position:absolute;
+	right:40px;
+	bottom:150px;
+}
 
 #objet{
 	position: absolute;
