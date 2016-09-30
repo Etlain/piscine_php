@@ -1,0 +1,49 @@
+body{
+	background-color:papayawhip;
+}
+
+ul{
+	list-style-type:none;
+}
+
+nav{
+	width:1000px;
+	margin:auto;
+}
+
+#menu{
+	float: left;
+	padding:5px;
+	font-size:130%;
+}
+
+#navig ul{
+	display:none;
+}
+
+#navig li:hover ul{
+	display:block;
+}
+
+.s_menu{
+	padding:5px;
+	font-size:130%;
+}
+
+.s_menu a{
+	color:#777777;
+	text-decoration:none;
+	font-size:70%;
+}
+
+.s_menu a:hover {
+	color:#AAAAAA;
+	text-decoration:blink;
+	font-size:70%;
+}
+
+#titre{
+	margin:auto;
+	width:1000px;
+	text-align:center;
+}
