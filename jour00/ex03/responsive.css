@@ -1,8 +1,22 @@
 #responsive{
-	max-width: 500px;
-	width: 85%;
 }
 
-/*table{
-	width: 50%;
-}*/
+
+.masse{
+	text-align:right;
+	font-size:1.2vw;
+}
+
+.elem{
+	padding:5px;
+	font-size:2vw;
+}
+.elem3{
+	padding:5px;
+	font-size:1.9vw;
+}
+
+.num{
+	text-align:left;
+	font-size:1.2vw;
+}
