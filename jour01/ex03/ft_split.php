@@ -11,6 +11,8 @@
 
 	function ft_split($str)
 	{	
+		if($str == NULL)
+			return (NULL);
 		$nbr = 0;
 		$j = 0;
 		$lgt_str = strlen($str);
