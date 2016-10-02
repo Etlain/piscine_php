@@ -12,6 +12,7 @@
 	function ft_split($str)
 	{	
 		$nbr = 0;
+		$j = 0;
 		$lgt_str = strlen($str);
 		while ($nbr < $lgt_str)
 		{
@@ -22,6 +23,7 @@
 			}
 			$nbr++;
 		}
+		sort($tab);
 		return($tab);
 	}
 ?>
