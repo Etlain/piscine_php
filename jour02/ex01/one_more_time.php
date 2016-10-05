@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+	date_default_timezone_set("Europe/Paris");
 	function nbr_month($str)
 	{
 		if (strcasecmp($str, "janvier") == 0)
@@ -46,9 +47,11 @@
 		wrong_format(1, 1);
 	$i = preg_match("/^[Ll]undi$|^[Mm]ardi$|^[Mm]ercredi$|^[Jj]eudi$|^[Vv]endredi$|^[Ss]amedi$|^[Dd]imanche$/", $tab[0]);
 	wrong_format($i, 0);
-	$i = preg_match("/^[0-9]{1,2}$/", $tab[1]);
+	$i = preg_match("/^[0-2]?[0-9]$|^[3]?[0-1]$/", $tab[1]);
+	if ($tab[$i] == "00")
+		wrong_format(0, 0);
 	wrong_format($i, 0);
-	$i = preg_match("/^[Jj]anvier$|^[Ff][eé]vrier$|^[Mm]ars$|^[Aa]vril$|^[Mm]ai$|^[Jj]uin$|^[Jj]uillet$|^[Aa]o[uû]t$|^[Ss]eptembre$|^[Oo]ctobre$|^[Nn]ovembre$|^[Dd][eé]cembre$/", $tab[2]);
+	$i = preg_match("/^[Jj]anvier$|^[Ff][e]vrier$|^[Mm]ars$|^[Aa]vril$|^[Mm]ai$|^[Jj]uin$|^[Jj]uillet$|^[Aa]o[u]t$|^[Ss]eptembre$|^[Oo]ctobre$|^[Nn]ovembre$|^[Dd][e]cembre$/", $tab[2]);
 	wrong_format($i, 0);
 	$i = preg_match("/^[0-9]{4}$/", $tab[3]);
 	wrong_format($i, 0);
