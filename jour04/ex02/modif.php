@@ -1,8 +1,6 @@
 <?php
 if ($_POST['submit'] == "OK" && $_POST['oldpw'] !== '' && $_POST['login'] !== '' && $_POST['newpw'] !== '')
 {
-	if (!file_exists("../private"))
-		echo "ERROR\n";
 	if (file_exists("../private/passwd"))
 	{
 		$file = file_get_contents("../private/passwd");
