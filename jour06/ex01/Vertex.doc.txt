@@ -1,0 +1,14 @@
+<- Vertex ----------------------------------------------------------------------
+La classe Vector contient la couleur au format RGB, ainsi que les coordonnees,
+d'un point.
+
+Une instance peut etre construite de cette maniere, avec ces trois attributs
+obligatoire la couleur sera blanche par defaut, et w sera defini a 1.0:
+new Vector(array( 'x' => 8, 'y' => 7, 'z' => 6 ));
+
+Il est possible de definir w et la couleur avec une instance Color (voir
+Color.doc.txt pour plus de precision):
+new Vector( array( 'x' => 2.5, 'y' => 2.5, 'z' => 2.5, 'w' => 1.0, new Color(array)));
+
+La classe contient des assesseurs : get_color, set_color, get_x, set_x, etc...
+---------------------------------------------------------------------- Vertex ->
