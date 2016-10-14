@@ -1,0 +1,26 @@
+<!Doctype>
+<html>
+<head>
+  <title>balloon</title>
+</head>
+<body>
+  <div id="test" style="background-color:red; height:200px; width:200px;border-radius:100px;" onclick="change_color()"></div>
+  <script>
+    function change_color()
+    {
+      var color;
+      var obj;
+
+      obj = document.getElementById("test");
+      color = obj.style.backgroundColor;
+      console.log(color);
+      if (color == "red")
+          obj.style.backgroundColor = "green";
+      else if (color == "green")
+          obj.style.backgroundColor = "blue";
+      else
+          obj.style.backgroundColor = "red";
+    }
+  </script>
+</body>
+</html>
