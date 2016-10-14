@@ -4,22 +4,52 @@
   <title>balloon</title>
 </head>
 <body>
-  <div id="test" style="background-color:red; height:200px; width:200px;border-radius:100px;" onclick="change_color()"></div>
+  <div id="test" style="background-color:red; height:200px; width:200px;border-radius:500px;"></div>
   <script>
+    document.getElementById("test").addEventListener("mouseout", less);
+    document.getElementById("test").addEventListener("click", change_color);
     function change_color()
     {
       var color;
       var obj;
+      var lenght;
 
       obj = document.getElementById("test");
       color = obj.style.backgroundColor;
-      console.log(color);
+      lenght = parseInt(obj.style.width) + 10;
+      if (lenght > 420)
+        lenght = 200;
+      obj.style.width = String(lenght) + "px";
+      obj.style.height = String(lenght) + "px";
       if (color == "red")
           obj.style.backgroundColor = "green";
       else if (color == "green")
           obj.style.backgroundColor = "blue";
       else
           obj.style.backgroundColor = "red";
+    }
+
+    function less()
+    {
+      var color;
+      var obj;
+      var lenght;
+
+      obj = document.getElementById("test");
+      color = obj.style.backgroundColor;
+      lenght = parseInt(obj.style.width) - 5;
+      console.log(lenght);
+      if (lenght > 195)
+      {
+        obj.style.width = String(lenght) + "px";
+        obj.style.height = String(lenght) + "px";
+      }
+      if (color == "blue")
+          obj.style.backgroundColor = "green";
+      else if (color == "green")
+          obj.style.backgroundColor = "red";
+      else
+          obj.style.backgroundColor = "blue";
     }
   </script>
 </body>
