@@ -5,17 +5,50 @@
 </head>
 <body>
   <form>
-  <input type="text"></input>
-  <select>
+  <input id="nbr1" type="text"></input>
+  <select id="op">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">*</option>
     <option value="/">/</option>
+    <option value="%">%</option>
   </select>
-  <input type="text"></input>
-  <input type="submit" name="submit" value="Try me !">
+  <input id="nbr2" type="text"></input>
+  <input id="submit" type="submit" name="submit" value="Try me !">
   </form>
   <script>
+  document.getElementById("submit").addEventListener("click", calcul);
+  setInterval(alert, 30000, "Please, use me...");
+  function calcul()
+  {
+    var nbr1 = parseInt(document.getElementById("nbr1").value);
+    var nbr2 = parseInt(document.getElementById("nbr2").value);
+    var op = document.getElementById("op").value;
+
+    if (nbr1 >= 0 && nbr2 >= 0)
+    {
+      if ((op == "/" || op == "%") && nbr2 == 0)
+      {
+        console.log("It's over 9000 !");
+        alert("It's over 9000 !");
+        return ;
+      }
+      if (op == "+")
+        nbr1 += nbr2;
+      else if (op == "-")
+        nbr1 -= nbr2;
+      else if (op == "*")
+        nbr1 *= nbr2;
+      else if (op == "/")
+        nbr1 /= nbr2;
+      else if (op == "%")
+        nbr1 %= nbr2;
+    console.log(nbr1);
+    alert(nbr1);
+  }
+  else
+      alert("Error:(");
+}
   </script>
 </body>
 </html>
